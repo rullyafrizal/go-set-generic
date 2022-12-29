@@ -19,7 +19,7 @@ type SetImpl[T SetType] struct {
 	Content []T
 }
 
-func NewSetString[T SetType]() Set[T] {
+func NewSet[T SetType]() Set[T] {
 	return &SetImpl[T]{
 		Cache:   map[T]int{},
 		Content: make([]T, 0),

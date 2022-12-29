@@ -6,7 +6,7 @@ import (
 )
 
 func TestAdd(t *testing.T) {
-	var s1 Set[string] = NewSetString[string]()
+	var s1 Set[string] = NewSet[string]()
 	s1.add("Apple")
 	s1.add("Banana")
 	s1.add("Apple")
@@ -20,7 +20,7 @@ func TestAdd(t *testing.T) {
 }
 
 func TestRemove(t *testing.T) {
-	var s = NewSetString[string]()
+	var s = NewSet[string]()
 	s.add("Apple")
 	s.add("Banana")
 	s.add("Apple")
